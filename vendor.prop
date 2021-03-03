@@ -113,6 +113,10 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM8150
+
 # Data modules
 ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent
