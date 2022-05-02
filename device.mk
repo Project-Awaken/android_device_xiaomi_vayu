@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.vayu \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     libkeymaster_messages.vendor
 
 PRODUCT_COPY_FILES += \
