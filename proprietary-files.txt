@@ -70,6 +70,11 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audio FX modules - from 11500.02 SMxxx0
+vendor/lib/soundfx/libqcbassboost.so|cdad1495b301ec2f22edd7557ec14c9d8370a81c
+vendor/lib/soundfx/libqcreverb.so|c271099a9268c959e8f1ae50480dc46a97c72470
+vendor/lib/soundfx/libqcvirt.so|346cbac883120747d5ceb0ac2b6fd3314a03147c
+
 # Audio HAL
 vendor/lib/hw/audio.primary.msmnile.so
 vendor/lib/vndk/libxlog.so
