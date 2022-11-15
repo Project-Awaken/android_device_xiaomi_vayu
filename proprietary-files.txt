@@ -1,4 +1,4 @@
-# These proprietary files are extracted from POCO X3 Pro (codenamed `vayu`) MIUI V13.0.5.0 SJUMIXM, unless pinned
+# These proprietary files are extracted from POCO X3 Pro (codenamed `vayu`) MIUI V13.0.8.0 SJUMIXM, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -71,9 +71,9 @@ vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio FX modules - from 11500.02 SMxxx0
-vendor/lib/soundfx/libqcbassboost.so|cdad1495b301ec2f22edd7557ec14c9d8370a81c
-vendor/lib/soundfx/libqcreverb.so|c271099a9268c959e8f1ae50480dc46a97c72470
-vendor/lib/soundfx/libqcvirt.so|346cbac883120747d5ceb0ac2b6fd3314a03147c
+vendor/lib/soundfx/libqcbassboost.so|283f1df1eeb4302461922aa30ae9e28c418c30d9
+vendor/lib/soundfx/libqcreverb.so|25028a99fce659909c68722956155c9cb270257f
+vendor/lib/soundfx/libqcvirt.so|6ffb736dea76c9df080af5208e15a86f79266258
 
 # Audio HAL
 vendor/lib/hw/audio.primary.msmnile.so
