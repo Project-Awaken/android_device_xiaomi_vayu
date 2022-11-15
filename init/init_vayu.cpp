@@ -44,7 +44,7 @@ using std::string;
 
 void property_override(char const prop[], char const value[])
 {
-    auto pi = (prop_info*) __system_property_find(prop);
+    auto pi = (prop_info *)__system_property_find(prop);
 
     if (pi != nullptr)
         __system_property_update(pi, value, strlen(value));
@@ -53,7 +53,8 @@ void property_override(char const prop[], char const value[])
 }
 
 void set_ro_build_prop(const string &source, const string &prop,
-                       const string &value, bool product = false) {
+                       const string &value, bool product = false)
+{
     string prop_name;
 
     if (product)
@@ -65,12 +66,14 @@ void set_ro_build_prop(const string &source, const string &prop,
 }
 
 void set_device_props(const string brand, const string device,
-			const string model, const string name) {
+                      const string model, const string name)
+{
     // list of partitions to override props
-    string source_partitions[] = { "", "bootimage.", "odm.", "product.",
-                                   "system.", "system_ext.", "vendor." };
+    string source_partitions[] = {"", "bootimage.", "odm.", "product.",
+                                  "system.", "system_ext.", "vendor."};
 
-    for (const string &source : source_partitions) {
+    for (const string &source : source_partitions)
+    {
         set_ro_build_prop(source, "brand", brand, true);
         set_ro_build_prop(source, "device", device, true);
         set_ro_build_prop(source, "product", device, false);
@@ -84,9 +87,12 @@ void vendor_load_properties()
     /*
      * Detect device and configure properties
      */
-    if (GetProperty("ro.boot.hwc", "") == "INDIA") {
+    if (GetProperty("ro.boot.hwc", "") == "INDIA")
+    {
         set_device_props("POCO", "bhima", "M2102J20SI", "bhima_global");
-    } else {
+    }
+    else
+    {
         set_device_props("POCO", "vayu", "M2102J20SG", "vayu_global");
     }
 

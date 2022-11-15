@@ -17,11 +17,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!--
+     <!--
         Optional placeholders replaced at runtime:
           {device} - Device name
           {type} - Build type
     -->
-    <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/Project-Awaken/OTA/12/{ziptype}/vayu.json</string>
-    <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/Project-Awaken/OTA/12/changelogs/changelog_vayu.txt</string>
+     <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/Project-Awaken/OTA/12/{ziptype}/vayu.json</string>
+     <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/Project-Awaken/OTA/12/changelogs/changelog_vayu.txt</string>
 </resources>

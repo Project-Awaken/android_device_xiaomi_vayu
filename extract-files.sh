@@ -31,18 +31,18 @@ SECTION=
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
-                CLEAN_VENDOR=false
-                ;;
+            CLEAN_VENDOR=false
+        ;;
         -k | --kang )
-                KANG="--kang"
-                ;;
+            KANG="--kang"
+        ;;
         -s | --section )
-                SECTION="${2}"; shift
-                CLEAN_VENDOR=false
-                ;;
+            SECTION="${2}"; shift
+            CLEAN_VENDOR=false
+        ;;
         * )
-                SRC="${1}"
-                ;;
+            SRC="${1}"
+        ;;
     esac
     shift
 done
@@ -55,10 +55,10 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib64/libgoodixhwfingerprint.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-            ;;
+        ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
-            ;;
+        ;;
     esac
 }
 

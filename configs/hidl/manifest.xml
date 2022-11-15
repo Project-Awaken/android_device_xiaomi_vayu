@@ -137,7 +137,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-<!-- Disable tether offload
+    <!-- Disable tether offload
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>

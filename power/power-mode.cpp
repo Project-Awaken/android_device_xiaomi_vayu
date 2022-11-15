@@ -37,33 +37,38 @@ namespace pixel {
 
 using ::aidl::android::hardware::power::Mode;
 
-bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
-    switch (type) {
-        case Mode::DOUBLE_TAP_TO_WAKE:
-            *_aidl_return = true;
-            return true;
-        default:
-            return false;
+bool isDeviceSpecificModeSupported(Mode type, bool *_aidl_return)
+{
+    switch (type)
+    {
+    case Mode::DOUBLE_TAP_TO_WAKE:
+        *_aidl_return = true;
+        return true;
+    default:
+        return false;
     }
 }
 
-bool setDeviceSpecificMode(Mode type, bool enabled) {
-    switch (type) {
-        case Mode::DOUBLE_TAP_TO_WAKE: {
-            int fd = open(TOUCH_DEV_PATH, O_RDWR);
-            int arg[2] = {Touch_Doubletap_Mode, enabled ? 1 : 0};
-            ioctl(fd, TOUCH_IOC_SETMODE, &arg);
-            close(fd);
-            return true;
-        }
-        default:
-            return false;
+bool setDeviceSpecificMode(Mode type, bool enabled)
+{
+    switch (type)
+    {
+    case Mode::DOUBLE_TAP_TO_WAKE:
+    {
+        int fd = open(TOUCH_DEV_PATH, O_RDWR);
+        int arg[2] = {Touch_Doubletap_Mode, enabled ? 1 : 0};
+        ioctl(fd, TOUCH_IOC_SETMODE, &arg);
+        close(fd);
+        return true;
+    }
+    default:
+        return false;
     }
 }
 
-}  // namespace pixel
-}  // namespace impl
-}  // namespace power
-}  // namespace hardware
-}  // namespace google
-}  // namespace aidl
+} // namespace pixel
+} // namespace impl
+} // namespace power
+} // namespace hardware
+} // namespace google
+} // namespace aidl
