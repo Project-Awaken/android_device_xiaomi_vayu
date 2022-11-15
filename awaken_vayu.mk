@@ -27,6 +27,9 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 # Google Assistant
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
+# Live Wallpaper
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 # Official
 AWAKEN_BUILD_TYPE := official
 
