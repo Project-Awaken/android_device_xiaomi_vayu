@@ -30,9 +30,6 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 # Official
 AWAKEN_BUILD_TYPE := official
 
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
 PRODUCT_NAME := awaken_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
